@@ -18,7 +18,7 @@ body {
     min-width: 100vw;
     min-height: 100vh;
     max-height: 100vh;
-    resize: none;
+    overflow: auto;
 }
 
 img {
@@ -52,7 +52,7 @@ button {
 }
 
 #info {
-    font-size: clamp(15px, calc(15px + 1vw), 35px);
+    font-size: clamp(15px, calc(15px + 0.5vw), 35px);
     font-weight: 900;
     display: flex;
 }
@@ -93,6 +93,7 @@ input {
     padding: 75px 50px;
     box-shadow: 0px 15px 15px lightgrey, 0px -8px 8px lightgrey;
     z-index: 1;
+    overflow: auto;
 }
 
 input:required:invalid:not(:focus) {
